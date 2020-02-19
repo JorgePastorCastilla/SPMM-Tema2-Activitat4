@@ -26,9 +26,7 @@ public class Main4_2 extends ListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main4_2);
-
-
+//        setContentView(R.layout.activity_main4_2);
         llistaContactes();
     }
 
@@ -100,7 +98,7 @@ public class Main4_2 extends ListActivity {
             adapter = new SimpleAdapter(this, llista, R.layout.llista_detall,
                     new String[]{"nom", "telefon", "email"}, new int[]{R.id.nom,
                     R.id.telefon, R.id.email});
-            lv.setAdapter(adapter);
+            setListAdapter(adapter);
         }
     }
 }
